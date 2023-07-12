@@ -1,0 +1,17 @@
+#include <stdio.h>    /* printf()...            */
+#include <stdlib.h>   /* EXIT_SUCCESS           */
+#include "mybool.h"  /* mybool, true, false... */
+
+int main(void) {
+    mybool b1, b2, b3, b4;
+    b1 = true;
+    b2 = false;
+    b3 = b1 || b2; //true
+    b4 = b1 && b2; //false
+    printf("b1: %d\n"
+           "b2: %d\n"
+           "b3 == b1 or b2: %d\n"
+           "b4 == b1 and b2: %d\n"
+           "", b1, b2, b3, b4);
+    return EXIT_SUCCESS;
+}
